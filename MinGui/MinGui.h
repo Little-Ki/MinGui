@@ -13,7 +13,6 @@
 #pragma warning(disable:4244)
 
 namespace MinGui {
-
 	class KeyObserver {
 	private:
 		bool PrevState[256]{ false };
@@ -127,7 +126,6 @@ namespace MinGui {
 		char	Shift;
 	};
 
-
 	namespace Global {
 		extern Vec2			CurrMousePos;
 		extern Vec2			PrevMousePos;
@@ -173,7 +171,6 @@ namespace MinGui {
 			__forceinline extern void AddText(const Vec2& pos, const std::string& text, const Color& color, AlignMode mode, int level);
 		}
 	}
-
 
 	struct ProxyFuncs {
 		std::function<void()> Setup;
